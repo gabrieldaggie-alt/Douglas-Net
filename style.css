@@ -1,0 +1,129 @@
+
+/* ========== BODY - whole page ========== */
+body {
+  text-transform: uppercase; /* Make all text CAPITAL */
+  font-size: 17px;
+  display: flex; /* Use flexbox to center everything */
+  justify-content: center; /* Center left-right */
+  align-items: center; /* Center up-down */
+  gap: 10pt; /* Space between sections */
+  flex-direction: column; /* Stack sections top to bottom */
+  background-color: rgba(7, 21, 10, 1); /* Dark green background */
+  color: white; /* Default text color = white */
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px 0; /* Space at top and bottom */
+}
+
+/* ========== LOGO ========== */
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* ========== LOGIN ROW ========== */
+#login {
+  display: flex; /* Input + button side by side */
+  gap: 8px; /* Small gap between them */
+}
+
+/* Login input + Search input - same style */
+#login input,
+input[type="search"] {
+  padding: 10px;
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid white;
+  background: transparent; /* See-through, show dark background */
+  color: white; /* Typed text will be white */
+}
+
+/* Placeholder text inside inputs - light grey so you can see it */
+input::placeholder {
+  color: #ccc;
+}
+
+/* ========== ALL BUTTONS ========== */
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer; /* Hand cursor on hover */
+}
+
+/* ========== TITLE TEXT ========== */
+.title {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* ========== PACKAGES WRAPPER ========== */
+#pack {
+  display: flex;
+  flex-direction: column; /* Stack cards top to bottom */
+  gap: 18px; /* Space between cards */
+}
+
+/* ========== ONE PACKAGE CARD ========== */
+/* We use CLASS .items, not ID, because we have 6 cards */
+.items {
+  color: white; /* Default inside card = white */
+  width: 280px;
+  border: 1px solid white; /* White border around card */
+  display: flex;
+  flex-direction: row; /* Time, Price, Button in one row */
+  align-items: center; /* Center them vertically */
+  gap: 20px;
+  border-radius: 10px;
+  padding: 15px 10px;
+  justify-content: space-between; /* Push them apart */
+}
+
+/* ========== TIME WORD ONLY - 12hours, Weekly etc ========== */
+/* This is the fix for your question. Only .time is green */
+.items .time {
+  color: lime; /* Lime green */
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* ========== PRICE ONLY - Ugx 1000 etc ========== */
+.items .price {
+  color: white;
+  font-size: 15px;
+}
+
+/* ========== WE ACCEPT BOX ========== */
+#item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  color: white;
+}
+
+/* GabiFi inside footer - make it green */
+footer span {
+  color: lime;
+}
+
+/* ========== HELP TEXT ========== */
+#help {
+  color: white;
+  text-transform: capitalize; /* First letter capital, rest small */
+}
+
+/* ========== PHONE NUMBER ========== */
+.phone {
+  color: lime;
+}
